@@ -5,11 +5,13 @@ on:
         branches:
             - main
 jobs:
+    # Run test
     test:
-        runs-on: unbuntu-latest
+        runs-on: ubuntu-latest
 
         env:
-            MODE: "dev"
+            # Initialized in environment
+            SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
         steps:
             - uses: actions/checkout@v4
@@ -23,6 +25,6 @@ jobs:
               run: |
                 pip install --upgrade pip
                 pip install -r ./requirements.txt
-            
+
             - name: Test App Code
               run: python ./code_test.py
