@@ -10,7 +10,7 @@ jobs:
         runs-on: unbuntu-latest
 
         env:
-            MODE: "dev"
+            SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
         steps:
             - uses: actions/checkout@v4
