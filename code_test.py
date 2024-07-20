@@ -10,7 +10,9 @@ class TestExampleCode(unittest.TestCase):
 
     def test_get_secrets(self):
         # Assuming the .env file or environment has the correct SECRET_KEY set
-        self.assertEqual(get_secrets(), 'secret')
+        expected_secret = 'secret'
+        actual_secret = get_secrets()
+        self.assertEqual(actual_secret, expected_secret, f"Expected {expected_secret}, but got {actual_secret}")
 
 if __name__ == '__main__':
     unittest.main()
