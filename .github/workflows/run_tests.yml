@@ -5,6 +5,7 @@ on:
         branches:
             - main
 jobs:
+    # Run test
     test:
         runs-on: unbuntu-latest
 
