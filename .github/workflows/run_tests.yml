@@ -25,9 +25,6 @@ jobs:
               run: |
                 pip install --upgrade pip
                 pip install -r ./requirements.txt
-            
-            - name: Print SECRET_KEY
-              run: echo $SECRET_KEY
 
             - name: Test App Code
               run: python ./code_test.py
