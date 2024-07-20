@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
 
         env:
-            # Should be initialized in environment
+            # Initialized in environment
             SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
         steps:
@@ -20,6 +20,8 @@ jobs:
               uses: actions/setup-python@v5
               with:
                 python-version: '3.11'
+            
+            
 
             - name: Install dependencies
               run: |
