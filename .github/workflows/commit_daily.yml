@@ -1,0 +1,26 @@
+name: Commit to CSV File Daily
+
+on:
+    schedule:
+        # Run at 10:06am daily
+        - cron: '6 10 * * *'
+jobs:
+    # Add to CSV file daily
+    add-CSV:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
+                python-version: '3.11'
+
+            - name: Install dependencies
+              run: |
+                pip install --upgrade pip
+                pip install -r ./requirements.txt
+
+            - name: Test App Code
+              run: python ./csv_code.py
