@@ -1,4 +1,4 @@
-# workflow-demo
+# Workflow Demo
 A demo repository for practicing GitHub Actions using YAML.
 ***
 **Topics:** Branch Protection, Creating a Workflow, Testing Workflows, Github secrets + Environment Variables, Cron (Timed) Functions <br>
