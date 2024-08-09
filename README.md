@@ -5,7 +5,8 @@ A demo repository for practicing GitHub Actions using YAML.
 
 **Workflow objective:** every time we try to make a change to the repository, we want to automatically run all tests in `code_test.py`
 
-**Daily Commit:** runs the cron functions within the workflows, enabling the `csv_code.py` script to run everyday at 10:06am
+**Daily Commit:** runs the cron functions within the workflows, enabling the `csv_code.py` script to run everyday at 10:06am <br>
+ERROR: Cron does not work as intended
 
 ***
 **Relevant Git/Terminal Commands:** <br>
